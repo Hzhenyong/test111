@@ -51,10 +51,10 @@ const config = {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
          },
-        items: [
-          {to: 'blog', label: 'Blog', position: 'left'}, // or position: 'right'
+       // items: [
+         // {to: 'blog', label: 'Blog', position: 'left'}, // or position: 'right'
 
-        ]
+        //]
         // items: [
         //   {to: 'blog', label: 'Blog', position: 'left'},
         //   {
