@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
+  title: '振永的博客',
   tagline: 'Dinosaurs are cool',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
@@ -14,7 +14,7 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  projectName: 'blog', // Usually your repo name.
 
   presets: [
     [
@@ -22,10 +22,11 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         // docs: {
-        //   sidebarPath: require.resolve('./sidebars.js'),
+           //sidebarPath: require.resolve('./sidebars.js'),
         //   // Please change this to your repo.
-        //   editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         // },
+        docs: false,
         blog: {
           path: "./blog",
           routeBasePath: "/",
@@ -49,21 +50,26 @@ const config = {
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
-        },
+         },
         items: [
-          // {
-          //   type: 'doc',
-          //   docId: 'intro',
-          //   position: 'left',
-          //   label: 'Tutorial',
-          // },
+          {to: 'blog', label: 'Blog', position: 'left'}, // or position: 'right'
+
+        ]
+        // items: [
+        //   {to: 'blog', label: 'Blog', position: 'left'},
+        //   {
+        //     type: 'doc',
+        //     docId: 'intro',
+        //     position: 'left',
+        //     label: 'Tutorial',
+        //   },
           // {to: '/blog', label: 'Blog', position: 'left'},
           // {
           //   href: 'https://github.com/facebook/docusaurus',
           //   label: 'GitHub',
           //   position: 'right',
           // },
-        ],
+       // ],
       },
       footer: {
         style: 'dark',
