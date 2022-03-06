@@ -9,7 +9,7 @@ const config = {
   title: '振永的博客',
   tagline: 'Dinosaurs are cool',
   url: 'https://blog.hzy2013.cn/',
-  baseUrl: '/',
+  baseUrl: '/blog',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
